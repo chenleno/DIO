@@ -1,0 +1,9 @@
+.*
+*.md
+*.yml
+*.json
+*.ts
+config/
+node_modules/
+src/
+tools/

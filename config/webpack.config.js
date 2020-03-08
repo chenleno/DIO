@@ -1,5 +1,6 @@
 
 const paths = require('../tools/paths')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -7,7 +8,7 @@ module.exports = {
   },
   output: {
     path: paths.resolvePath('dist'),
-    filename: '[name].bundle.[hash:8].js'
+    filename: '[name].bundle.js'
   },
   module: {
     rules: [{
@@ -30,5 +31,8 @@ module.exports = {
       '@': paths.src
     },
     extensions: ['.ts', '.js']
-  }
+  },
+  plugins:[
+    new CleanWebpackPlugin()
+  ]
 }
