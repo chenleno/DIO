@@ -2,7 +2,8 @@
   "name": "@lenochen/dio",
   "version": "1.0.1",
   "description": "dio",
-  "main": "dist/index.bundle.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config config/webpack.config.js"
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@babel/core": "^7.8.7",
     "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
     "@types/node": "^13.9.0",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",

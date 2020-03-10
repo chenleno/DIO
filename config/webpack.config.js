@@ -9,7 +9,7 @@ module.exports = {
   },
   output: {
     path: paths.resolvePath('dist'),
-    filename: '[name].bundle.js',
+    filename: 'index.js',
     /**
      * libraryTarget, 用于表示webpack打包后的文件基于何种方式发挥作用
      * libraryTarget: 'commonjs2', 入口起点的返回值将分配给 module.exports 对象,

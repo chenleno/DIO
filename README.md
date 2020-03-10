@@ -22,7 +22,7 @@ storage.getItem('bar') // { a: 1, b: 2 }
 const a = require('./a.js')
 module.exports = { a }
 
-// usecase 使用DIO的另一个项目
+// Usage 使用DIO的另一个项目
 // npm i @lenochen/dio
 import { a } from '@lenochen/dio'
 console.log(a) // undefined
