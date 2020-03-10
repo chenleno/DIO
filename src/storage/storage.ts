@@ -4,10 +4,21 @@ interface IStorage {
 }
 
 const storage: IStorage = {
-  setItem: (key, value) => window.localStorage.setItem(key, value.toString()),
+  setItem: (key, value) => {
+    if (typeof(value) === 'string') {
+      localStorage.setItem(key, value)
+    }
+    localStorage.setItem(key, JSON.stringify(value))
+  },
   getItem: key => {
-    const initValue = window.localStorage.getItem(key)
-    
+    const r = localStorage.getItem(key)
+    if (r) {
+      try {
+        return JSON.parse(r)
+      } catch(err) {
+        return r
+      }
+    }
   }
 }
 
