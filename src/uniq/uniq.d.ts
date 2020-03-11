@@ -1,0 +1,1 @@
+declare function unqi<T>(params: string | T[]): string | T[]
