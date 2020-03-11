@@ -11,6 +11,9 @@ interface IStorage {
   getItem(key: string): any
 }
 
+/**
+ * 简化localStorage 存取方法
+ */
 const storage: IStorage = {
   setItem: (key, value) => {
     if (typeof(value) === 'string') {

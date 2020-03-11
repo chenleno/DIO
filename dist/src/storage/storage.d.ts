@@ -9,5 +9,8 @@ interface IStorage {
      */
     getItem(key: string): any;
 }
+/**
+ * 简化localStorage 存取方法
+ */
 declare const storage: IStorage;
 export default storage;
