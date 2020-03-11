@@ -3,8 +3,9 @@
 
 ![我是DIO哒](https://i0.wp.com/i0.hdslb.com/bfs/archive/badc22dc8e557cb0386a0a5a2affbd1549c29242.jpg?fit=320,200)
 
-## 用例
+## Usage
 > storage
+
 storage 简化了 localStorage 的 getItem 和 setItem 方法, 自动转化存取格式
 ```javascript
 import { storage } from '@lenochen/dio'
