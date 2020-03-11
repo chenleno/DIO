@@ -13,6 +13,15 @@ const boo = { a: 1, b: 2}
 storage.setItem('bar', boo)
 storage.getItem('bar') // { a: 1, b: 2 } 
 ```
+> uniq
+
+uniq 可以将字符串或数组去重，且去重后保留原始顺序
+```javascript
+import { uniq } from '@lenochen/dio'
+uniq('534431122') // 53412
+uniq([5,3,3,6,2,5,1]) // [5,3,6,2,1]
+uniq(['q', 'w', 'q','e','w']) // ['q','w','e']
+```
 
 ## 踩坑
 ### output.libraryTarget
